@@ -1,0 +1,132 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Pizza Hut</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+    /* Contact Page CSS */
+
+.contact-section{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1513104890138-7c749659a591") no-repeat center/cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box{
+    background: rgba(255,255,255,0.08);
+    padding: 40px;
+    width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(8px);
+}
+
+.contact-box h1{
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #ff3c00;
+}
+
+.contact-box p{
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+header{
+    background:#d6001c;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+footer{
+    background:#d6001c;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+.contact-box button{
+    width: 100%;
+    padding: 12px;
+    background: #ff3c00;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-box button:hover{
+    background: #e62e00;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">🍕 Pizza Hut</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="contact-section">
+    <div class="contact-box">
+        <h1>Contact Us</h1>
+        <p>Have a question or want to order? Send us a message!</p>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Pizza Hut Clone | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
