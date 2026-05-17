@@ -1,0 +1,192 @@
+<!-- menu.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizza Hut Menu</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+    /* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#ff0000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#ff0000;
+}
+
+/* Menu Section */
+.menu{
+    padding:50px;
+    text-align:center;
+}
+
+.menu h1{
+    font-size:45px;
+    margin-bottom:40px;
+    color:#ff0000;
+}
+
+.menu-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1b1b1b;
+    border-radius:15px;
+    padding:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.card h2{
+    margin:15px 0 10px;
+    color:#fff;
+}
+
+.card p{
+    font-size:15px;
+    color:#ccc;
+    margin-bottom:10px;
+}
+
+.card span{
+    font-size:22px;
+    color:#ff0000;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    margin-top:40px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">🍕 Pizza Hut</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="menu">
+    <h1>Our Delicious Menu</h1>
+
+    <div class="menu-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=500" alt="Pizza">
+            <h2>Cheese Pizza</h2>
+            <p>Loaded with mozzarella cheese.</p>
+            <span>$12</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500" alt="Pizza">
+            <h2>Pepperoni Pizza</h2>
+            <p>Classic pepperoni with extra cheese.</p>
+            <span>$15</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" alt="Pizza">
+            <h2>Veggie Pizza</h2>
+            <p>Fresh vegetables and crispy crust.</p>
+            <span>$13</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500" alt="Burger">
+            <h2>Burger</h2>
+            <p>Juicy chicken burger with fries.</p>
+            <span>$8</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlbmNoJTIwZnJpZXN8ZW58MHx8MHx8fDA%3D" alt="Fries">
+            <h2>French Fries</h2>
+            <p>Hot crispy fries with ketchup.</p>
+            <span>$5</span>
+        </div>
+
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1725075086631-b21a5642918b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c29mdCUyMGRyaW5rfGVufDB8fDB8fHww" alt="drink">
+            <h2>Cold Drink</h2>
+            <p>Refreshing soft drink.</p>
+            <span>$3</span>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Pizza Hut | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
